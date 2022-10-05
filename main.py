@@ -10,10 +10,11 @@ import pandas as pd
 import json
 
 # API Example:
-# https://api.openweathermap.org/data/2.5/forecast?q=city&cnt=1&units=imperial&appid=5a0c88b6ffbd025c638119fa7083d9b1
+# https://api.openweathermap.org/data/2.5/forecast?q=city&cnt=1&units=imperial&appid=APIKEY
 
 
-weather_key = os.environ['weather_key'] # API Key stored in environment variables
+# weather_key = os.environ['weather_key'] - API Key stored in environment variables
+weather_key = 'REPLACE WITH APIKEY FOR CODE TO WORK'
 
 baselink = 'https://api.openweathermap.org/data/2.5/forecast?q='
 apiEndLink = f'&cnt=1&units=imperial&appid={weather_key}'
